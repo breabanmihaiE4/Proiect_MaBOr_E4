@@ -1,0 +1,106 @@
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    flex:100%;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 100%;
+    letter-spacing: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.primary-nav {
+    flex:100%;
+}
+
+.primary-nav li {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navbar a:hover {
+    color: rgb(246, 10, 109);
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.authors {
+    flex: 100%;
+}
+
+.authors > li, a {
+    list-style: none;
+    color: gray;
+}
+
+.authors a:hover {
+    color: lightskyblue;
+}
+
+@media screen and (min-width: 845px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        flex: auto;
+        max-width: fit-content;
+        text-align: left;
+    }
+
+    .primary-nav {
+        margin-right: 10px;
+    }
+
+    nav {
+        flex: auto;
+        text-align: right;
+    }
+    
+    .primary-nav li {
+        display: inline;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .contact {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    
+}
