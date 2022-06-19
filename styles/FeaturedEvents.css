@@ -1,9 +1,60 @@
 body {
-    background-image: url(../images/Featured_events_background.jpeg);
+    background-image: url(../images/background_featured_events.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.75);
     color: aliceblue;
+}
+
+.titleBox {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: xx-large;
+    font-weight: bolder;
+
+}
+
+.eventBox {
+    display: block;
+    background-image: linear-gradient(180deg, rgb(95, 95, 95), rgb(176, 176, 176));
+    margin-bottom: 10px;
+}
+
+.date_and_location {
+    display: flex;
+    justify-content: center;
+}
+
+.date_and_location > p {
+    margin: 10px;
+}
+
+.eventImage img {
+    width: 100%;
+    height: auto;
+}
+
+.eventBox button {
+    font-size: xx-large;
+    color: aliceblue;
+    background-color: rgb(48, 48, 48);
+}
+
+@media screen and (min-width: 600px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .eventBox {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
